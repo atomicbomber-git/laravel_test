@@ -19,3 +19,9 @@ Route::get("/", function () {
 });
 
 Route::get("/ajax_test", "AjaxController@index");
+
+Route::get("/notification", function() {
+    return json_encode([
+        "Rudy", "Arif", "Anton"
+    ]);
+});
